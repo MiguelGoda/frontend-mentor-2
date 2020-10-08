@@ -7,7 +7,8 @@
     --pale_blue: hsl(243, 100%, 93%);
     --grayish_blue: hsl(229, 7%, 55%);
     --dark_blue: hsl(228, 56%, 26%);
-    
+    --gradient1: hsl(6, 100%, 80%);
+    --gradient2: hsl(335, 100%, 65%);
     --very_dark_blue: hsl(229, 57%, 11%);
 }
 body{
@@ -17,19 +18,20 @@ body{
 .wrapper{
     padding: 0 20px;
 }
-.propaganda{
-    margin: 150px 5px 0 5px ;
+.box{
     background: var(--dark_blue);
+    border-radius: 10px;
+}
+.propaganda{
+    margin: 120px 0px 15px 0px ;
     padding: 40px;
-    border-radius: 0 100px 0 0;
+    border-top-right-radius: 100px;
 }
 .logo{
     padding-bottom: 30px ;
 }
 .icons{
     display: flex;
-    /* justify-content: space-between; */
-    
 }
 .icon{
     display: flex;
@@ -38,4 +40,16 @@ body{
     padding: 12px;
     border-radius: 10px;
     margin-right: 20px;
+}
+meter{
+    width: 300px;
+    height: 40px;
+}
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 50px -50px #999 inset;
+    background-image: linear-gradient(to right, var(--gradient1) 0%, var(--gradient2) 100%)    ;
+    background-size: 100% 100%;
+  }
+  meter::-webkit-meter-bar {
+    background:var(--very_dark_blue);
 }
