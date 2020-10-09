@@ -42,14 +42,57 @@ body{
     margin-right: 20px;
 }
 meter{
-    width: 300px;
+    width: auto;
     height: 40px;
+    position: relative;
 }
 meter::-webkit-meter-optimum-value {
     box-shadow: 0 5px 50px -50px #999 inset;
-    background-image: linear-gradient(to right, var(--gradient1) 0%, var(--gradient2) 100%)    ;
+    background-image: linear-gradient(to right, var(--gradient1) 0%, var(--gradient2) 100%);
     background-size: 100% 100%;
-  }
-  meter::-webkit-meter-bar {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+meter::after{
+    content: "";
+    display: block;
+    width: 13px;
+    position: absolute;
+    top: 13px;
+    border-radius: 50%;
+    right: 52px;
+    height: 13px;
+    background: white;
+}
+meter::-webkit-meter-bar {
     background:var(--very_dark_blue);
+}
+.storage{
+    padding: 40px 0 50px 0;
+    color: white;
+    font-size: var(--font_size);
+}
+.storage span{
+    font-weight: bold;
+}
+.parrafo{
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5em;
+    width: auto;
+}
+.medidor{
+    display: flex;
+    justify-content: space-between;
+}
+.medidor li{
+    list-style: none;
+    font-size: var(--font_size);
+}
+.almacenamiento-restante{
+    background-color: white;
+    color: var(--very_dark_blue);
 }
