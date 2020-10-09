@@ -68,9 +68,10 @@ meter::-webkit-meter-bar {
     background:var(--very_dark_blue);
 }
 .storage{
-    padding: 40px 0 50px 0;
+    padding: 40px 0 65px 0;
     color: white;
     font-size: var(--font_size);
+    position: relative;
 }
 .storage span{
     font-weight: bold;
@@ -94,5 +95,25 @@ meter::-webkit-meter-bar {
 }
 .almacenamiento-restante{
     background-color: white;
+    padding: 20px;
+    margin: 20px 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+}
+.description span {
+    font-weight: 700;
+    font-size: 40px;
     color: var(--very_dark_blue);
+    margin-right: 10px;
+}
+.description {
+    color: var(--grayish_blue);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: .1em;
 }
