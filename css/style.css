@@ -117,3 +117,23 @@ meter::-webkit-meter-bar {
     font-weight: 700;
     letter-spacing: .1em;
 }
+@media screen and (min-width: 1024px){
+    body{
+        background: var(--very_dark_blue);
+    }
+    .contenedor{
+        margin-top: 15vh;
+        background: url(/images/bg-desktop.png) ;
+        background-size: cover;
+        background-position: center;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+    .propaganda{
+        margin: -320px 50px 0 0;
+    }
+}
