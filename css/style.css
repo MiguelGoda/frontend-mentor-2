@@ -120,12 +120,15 @@ meter::-webkit-meter-bar {
 @media screen and (min-width: 1024px){
     body{
         background: var(--very_dark_blue);
+        width: auto;
+        height: auto;
     }
     .contenedor{
-        margin-top: 15vh;
+        margin-top: 50vh;
         background: url(/images/bg-desktop.png) ;
         background-size: cover;
-        background-position: center;
+        background-position: initial;
+        height: 100vh;
     }
     .wrapper{
         display: flex;
@@ -134,6 +137,32 @@ meter::-webkit-meter-bar {
         height: 15vh;
     }
     .propaganda{
-        margin: -320px 50px 0 0;
+        width: 18em;
+        margin: -160px 45px 0 0;
+    }
+    .storage{
+        width: 50em;
+        margin: -110px -200px 0 0;
+        padding: 40px 0;
+        
+    }
+    .parrafo{
+        padding-left: 40px;
+        text-align: start;
+    }
+    .almacenamiento-restante{
+        padding: 20px 30px;
+        margin: -180px 480px;
+        border-radius: 10px 10px 0 10px;
+    }
+    .dibujo{
+        width: 0;
+     height: 0;
+     border-right: 25px solid white;
+     border-top: 25px solid white;
+     border-left: 25px solid transparent;
+     border-bottom: 25px solid transparent;
+     position: absolute;
+     margin: -115px 609px ;
     }
 }
