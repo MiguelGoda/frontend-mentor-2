@@ -167,14 +167,6 @@ meter::-webkit-meter-bar {
     margin: -115px 609px ;
     }
     meter::after{
-        content: "";
-        display: block;
-        width: 13px;
-        position: absolute;
-        top: 13px;
-        border-radius: 50%;
         right: 120px;
-        height: 13px;
-        background: white;
     }
 }
