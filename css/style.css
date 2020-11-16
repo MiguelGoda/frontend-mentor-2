@@ -14,6 +14,8 @@
 body{
     font-family: "Raleway", sans-serif;
     background: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+background-size: cover;
 }
 .wrapper{
     padding: 0 20px;
@@ -144,7 +146,6 @@ meter::-webkit-meter-bar {
         width: 50em;
         margin: -110px -200px 0 0;
         padding: 40px 0;
-        
     }
     .parrafo{
         padding-left: 40px;
@@ -157,12 +158,23 @@ meter::-webkit-meter-bar {
     }
     .dibujo{
         width: 0;
-     height: 0;
-     border-right: 25px solid white;
-     border-top: 25px solid white;
-     border-left: 25px solid transparent;
-     border-bottom: 25px solid transparent;
-     position: absolute;
-     margin: -115px 609px ;
+    height: 0;
+    border-right: 25px solid white;
+    border-top: 25px solid white;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    margin: -115px 609px ;
+    }
+    meter::after{
+        content: "";
+        display: block;
+        width: 13px;
+        position: absolute;
+        top: 13px;
+        border-radius: 50%;
+        right: 120px;
+        height: 13px;
+        background: white;
     }
 }
